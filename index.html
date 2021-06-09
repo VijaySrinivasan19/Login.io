@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>Login And Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form id="form1" class="register-form">
+                <div class="header">
+                    <h2>Create Account</h2>
+                </div>
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Type your username here" id="username" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Email</label>
+                    <input type="email" placeholder="Type your email-id" id="email" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Password</label>
+                    <input type="password" placeholder="Password" id="password" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Password check</label>
+                    <input type="password" placeholder="Confirm Password" id="password2" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <button onclick="checkReg()">Register</button>
+                <p class="message"> Already have an account? <a href="#"> Login</a> </p>
+            </form>
+
+            <form id="form2" class="login-form">
+                <div class="header">
+                    <h2>Login</h2>
+                </div>
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Email" id="loginname" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Password</label>
+                    <input type="password" placeholder="Password" id="loginpassword" />
+                    <small>Error message</small>
+                </div>
+            </form>
+            <form>
+                <button id="submit" type="submit" onclick="checkLogin()">Login</button>
+                <p class="message">Forgot<b href="#"> Password?</b></p>
+                <p class="message"> Don't have an account? <a href="#"> Register</a> </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="validate.js"></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script> $('.message a').click(function () {
+            $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+        });
+    </script>
+</body>
+
+</html>

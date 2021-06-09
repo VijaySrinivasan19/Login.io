@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(websitePic1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login-page{
+    width: 400px;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+}
+body {
+	background-color: #ffffff00;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container {
+	background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    position: relative;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.678);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+
+.login-form.header h2 {
+	margin: 0;
+}
+
+.login-form.header {
+	border-bottom: 1px solid #636363;
+    background-color: #464646;
+    border-radius: 6px;
+	padding: 20px 40px;
+}
+
+.form {
+    padding: 30px 40px;
+    border-radius: 4px;
+}
+
+.form .register-form {
+    display: none;
+}
+
+.form button:hover,.form button:active{
+    background: #5c5ecf ;
+	border: 2px solid #5c5ecf;
+}
+
+.form .message{
+    margin: 15px 0 0;
+    align-items: center;
+    font-family:inherit;
+    color: rgb(0, 0, 0);
+}
+
+.form .message a{
+    color: blue;
+    font-family:inherit;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.form .message b{
+    font-family:inherit;
+    text-transform: none;
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form button {
+	background-color: #3235ff;
+	border: #3235ff;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+}
